@@ -47,7 +47,7 @@ const Home = () => {
       <SpinningLogo />
 
         </div>  
-  <div className="lg:hidden absolute overflow-hidden right-[18%] md:right-[15%] -bottom-36 md:top-36 w-full ">
+  <div className="lg:hidden absolute overflow-hidden -inset-x-14 md:right-[15%] -bottom-36 md:top-36 w-full ">
 
   <RotatingBrain />
   </div>
@@ -58,23 +58,7 @@ const Home = () => {
 
     <SpinningCircle  /> 
   </div>
-  <div className='absolute m-auto top-[25%] mt-10 md:-top-12'>
-<div className='lg:hidden md:text-md text-dwhite dark:text-amber-100 m-auto   flex text-center justify-center flex-col md:mt-28'>
-              <p>Hey there! i'm</p>
-              <h1 className='text-3xl md:text-4xl font-bold text-amber-100'> IAN </h1>
-              <h1 className='text-3xl md:text-4xl font-bold text-amber-100 pb-2'> QUADRI<span className='text-3xl md:text-5xl text-yellow-500'>.</span></h1>
-              {/* <p className='text-lightText dark:text-amber-100'>your friendly WEB<span> DEVELOPER </span></p> */}
 
-
-            </div>
-
-            <div className='text-sm md:text-[18px] px-4 lg:hidden  flex text-center justify-center flex-col text-dwhite dark:text-amber-100'>
-              {/* <p>INTRODUCTION</p> */}
-              <h2 className='text-dwhite dark:text-yellow-500 text-1xl md:text-1xl font-bold'>FRONT-END WEB DEVELOPER</h2>
-              <p className=' w-1/2 md:w-1/3 m-auto'>Want to take a little tour of the amazing works i've completed over the years? Explore my Portfolio!</p>
-            </div>
-
-  </div>
 
         <div>
         <div className='md:hidden absolute w-full bottom-0 -left-2 text-lightText dark:text-amber-100'>
