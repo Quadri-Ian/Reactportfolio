@@ -6,6 +6,9 @@ module.exports = {
   darkMode: 'class', // Enable dark mode using a class
   theme: {
     extend: {
+      screens: {
+        'xxl': '1440px', // Custom screen size for 1440px
+      },
       colors: {
         lightBackground: '#c6b297',  // Define light mode colors
         lightText: '#5e574f',

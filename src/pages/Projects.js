@@ -85,6 +85,7 @@ const Projects = () => {
       <a
         href={project.link}
         className="text-sm px-4 text-amber-100 dark:text-yellow-500 md:mt-2 inline-block transition duration-300 group-hover:text-yellow-300"
+        target="_blank" rel="noopener noreferrer"
       >
         View Project
       </a>
