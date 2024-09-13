@@ -72,60 +72,69 @@ const About = () => {
         </p>
       </div>
 
-      {/* Card divs */}
-      <div className="grid grid-cols-2 gap-y-2 w-full m-auto md:flex justify-evenly pt-10 md:pt-10 lg:absolute bottom-12 xl:bottom-16 ">
-        {[
-          { icon: faCode, title: "Web-Dev", linkText: "4+ years" },
-          { icon: faUser, title: "CV", linkText: "Assess", downloadLink: "/ian_quadri_cv.pdf" },
-          {
-            icon: faMagnifyingGlassChart,
-            title: "Skillset",
-            linkText: "View",
-            skills: ["Javascript", "React", "WordPress", "SEO", "Python", "Database", "Coding", "Github", "PHP", "Digital Marketing"],
-          },
-          { icon: faGithub, title: "Github", linkText: "Repositories" },
-        ].map((card, i) => (
-          <motion.div
-            key={i}
-            custom={i}
-            initial="hidden"
-            animate="visible"
-            variants={cardVariants}
-            className="text-sm text-amber-100 text-center"
-          >
-            {card.skills ? (
-              <div className="flip-card hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto" onClick={handleFlip}>
-                <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
-                  <div className="flip-card-front rounded-lg pt-[85px] flex flex-col items-center justify-center p-6">
-                    <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack lg:text-6xl lg:pb-6" />
-                    <p>{card.title}</p>
-                    <p className='underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500 '>{card.linkText}</p>
-                  </div>
-                  <div className="flip-card-back rounded-lg flex flex-col items-center  justify-center p-6">
-                    <SkillIcons skills={card.skills} />
-                  </div>
-                </div>
-              </div>
-            ) : card.downloadLink ? (
-              <a href={card.downloadLink} download className="  ">
-                <div className="hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto card text-center pt-12 p-6 md:pt-24 rounded-lg">
-                  <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack  lg:text-6xl lg:pb-6" />
-                  <p>{card.title}</p>
-                  <p className=' underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500 '>{card.linkText}</p>
-                </div>
-              </a>
-            ) : (
-              <div className="hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto card text-center pt-12 p-6 md:pt-24 rounded-lg">
-                <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack lg:text-6xl lg:pb-6" />
-                <p>{card.title}</p>
-                <Link className="text-tlightText dark:text-amber-100 underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500 " to="https://github.com/Quadri-Ian" target="_blank" rel="noopener noreferrer">
-                  <p>{card.linkText}</p>
-                </Link>
-              </div>
-            )}
-          </motion.div>
-        ))}
-      </div>
+{/* Card divs */}
+<div className="grid grid-cols-2 gap-y-2 w-full m-auto md:flex justify-evenly pt-10 md:pt-10 lg:absolute bottom-12 xl:bottom-16 ">
+  {[
+    { icon: faCode, title: "Web-Dev", linkText: "4+ years" },
+    { icon: faUser, title: "CV", linkText: "Assess", downloadLink: "/ian_quadri_cv.pdf" },
+    {
+      icon: faMagnifyingGlassChart,
+      title: "Skillset",
+      linkText: "View",
+      skills: ["Javascript", "React", "WordPress", "SEO", "Python", "Database", "Coding", "Github", "PHP", "Digital Marketing"],
+    },
+    { icon: faGithub, title: "Github", linkText: "Repositories", link: "https://github.com/Quadri-Ian" },
+  ].map((card, i) => (
+    <motion.div
+      key={i}
+      custom={i}
+      initial="hidden"
+      animate="visible"
+      variants={cardVariants}
+      className="text-sm text-amber-100 text-center"
+    >
+      {card.skills ? (
+        <div className="flip-card hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto" onClick={handleFlip}>
+          <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
+            <div className="flip-card-front rounded-lg pt-[85px] flex flex-col items-center justify-center p-6">
+              <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack lg:text-6xl lg:pb-6" />
+              <p>{card.title}</p>
+              <p className='underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500 '>{card.linkText}</p>
+            </div>
+            <div className="flip-card-back rounded-lg flex flex-col items-center  justify-center p-6">
+              <SkillIcons skills={card.skills} />
+            </div>
+          </div>
+        </div>
+      ) : card.downloadLink ? (
+        <a href={card.downloadLink} download className="  ">
+          <div className="hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto card text-center pt-12 p-6 md:pt-24 rounded-lg">
+            <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack  lg:text-6xl lg:pb-6" />
+            <p>{card.title}</p>
+            <p className=' underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500 '>{card.linkText}</p>
+          </div>
+        </a>
+      ) : card.link ? (
+        <a href={card.link} target="_blank" rel="noopener noreferrer">
+          <div className="hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto card text-center pt-12 p-6 md:pt-24 rounded-lg">
+            <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack lg:text-6xl lg:pb-6" />
+            <p>{card.title}</p>
+            <p className="underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500">{card.linkText}</p>
+          </div>
+        </a>
+      ) : (
+        <div className="hover:shadow-fblack hover:shadow-lg dark:hover:shadow-yellow-500 w-36 shadow-sm shadow-fblack text-lightText dark:text-amber-100 h-36 md:h-48 md:w-40 lg:w-60 lg:h-64 m-auto card text-center pt-12 p-6 md:pt-24 rounded-lg">
+          <FontAwesomeIcon icon={card.icon} className="text-2xl text-yellow-100 dark:text-fblack lg:text-6xl lg:pb-6" />
+          <p>{card.title}</p>
+          <Link className="text-tlightText dark:text-amber-100 underline underline-offset-4 decoration-yellow-100 dark:decoration-yellow-500" to="/projects">
+            <p>{card.linkText}</p>
+          </Link>
+        </div>
+      )}
+    </motion.div>
+  ))}
+</div>
+
     </motion.div>
   );
 };

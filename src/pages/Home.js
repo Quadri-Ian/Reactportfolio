@@ -47,7 +47,7 @@ const Home = () => {
       <SpinningLogo />
 
         </div>  
-  <div className="lg:hidden absolute overflow-hidden right-[10%] -bottom-48 md:top-36 w-full ">
+  <div className="lg:hidden absolute overflow-hidden right-[12%] -bottom-48 md:top-36 w-full ">
 
   <RotatingBrain />
   </div>
