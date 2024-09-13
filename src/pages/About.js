@@ -73,7 +73,7 @@ const About = () => {
       </div>
 
 {/* Card divs */}
-<div className="grid grid-cols-2 gap-y-2 w-full m-auto md:flex justify-evenly pt-10 md:pt-10 lg:absolute bottom-12 xl:bottom-16 ">
+<div className="grid grid-cols-2 gap-y-2 w-full m-auto md:flex justify-evenly pb-4 pt-10 md:pt-10 lg:absolute bottom-12 xl:bottom-16 ">
   {[
     { icon: faCode, title: "Web-Dev", linkText: "4+ years" },
     { icon: faUser, title: "CV", linkText: "Assess", downloadLink: "/ian_quadri_cv.pdf" },

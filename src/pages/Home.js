@@ -62,6 +62,7 @@ const Home = () => {
 
         <div>
         <div className='md:hidden absolute w-full bottom-0 -left-2 text-lightText dark:text-amber-100'>
+          
           <div className='grid grid-cols-2 gap-x-36 gap-y-12  w-full text-lg items-center text-center'>
         <Link to="/about" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">About</Link>
         <Link to="/projects" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Projects</Link>

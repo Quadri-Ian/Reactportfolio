@@ -56,7 +56,7 @@ const App = () => {
         {/* Theme Toggle Button */}
         <button
           onClick={toggleTheme}
-          className="p-2 m-4 transform transition-transform duration-1000 ease-in-out dark:text-amber-100 fixed top-[6px] -right-1 md:top-6 lg:right-4 lg:top-4 z-50 flex items-center justify-center"
+          className="p-2 m-4 transform transition-transform duration-1000 ease-in-out dark:text-amber-100 absolute top-[6px] -right-1 md:top-6 lg:right-4 lg:top-4 z-50 flex items-center justify-center"
         >
           <FontAwesomeIcon icon={theme === 'dark' ? faSun : faMoon} className="text-lg" />
         </button>
