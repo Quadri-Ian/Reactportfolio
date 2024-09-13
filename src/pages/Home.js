@@ -6,7 +6,6 @@ import SpinningCircle from '../components/spinningCircle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons'; // Import the specific icon
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
-import HeaderStill from '../components/HeadrerStill';
 import RotatingBrain from '../components/rotatingBrain';
 import SpinningLogo from '../components/spinningLogo';
 
@@ -43,6 +42,59 @@ const Home = () => {
   transition={pageTransition}
   className='min-h-minus relative '
   >
+          <div className=' lg:hidden'>
+      <div className="flex md:hidden py-[22px] justify-center w-full">
+      <SpinningLogo />
+
+        </div>  
+  <div className="lg:hidden absolute overflow-hidden right-[10%] -bottom-48 md:top-36 w-full ">
+
+  <RotatingBrain />
+  </div>
+
+{/* name & intro mobile */}
+<div className=''>
+  <div className='absolute top-96 left-1/2 md:top-80'>
+
+    <SpinningCircle  /> 
+  </div>
+  <div className='absolute m-auto top-1/3 mt-10 md:-bottom-[320px] '>
+<div className='lg:hidden md:text-md text-dwhite dark:text-amber-100 m-auto   flex text-center justify-center flex-col md:mt-28'>
+              <p>Hey there! i'm</p>
+              <h1 className='text-3xl md:text-4xl font-bold text-amber-100'> IAN </h1>
+              <h1 className='text-3xl md:text-4xl font-bold text-amber-100 pb-2'> QUADRI<span className='text-3xl md:text-5xl text-yellow-500'>.</span></h1>
+              {/* <p className='text-lightText dark:text-amber-100'>your friendly WEB<span> DEVELOPER </span></p> */}
+
+
+            </div>
+
+            <div className='text-sm md:text-[18px] px-4 lg:hidden  flex text-center justify-center flex-col text-dwhite dark:text-amber-100'>
+              {/* <p>INTRODUCTION</p> */}
+              <h2 className='text-dwhite dark:text-yellow-500 text-1xl md:text-1xl font-bold'>FRONT-END WEB DEVELOPER</h2>
+              <p className=' w-1/2 md:w-1/3 m-auto'>Want to take a little tour of the amazing works i've completed over the years? Explore my Portfolio!</p>
+            </div>
+
+  </div>
+
+        <div>
+        <div className='md:hidden absolute bottom-0 w-full -left-0 text-lightText dark:text-amber-100'>
+          <div className='grid grid-cols-2 gap-x-36 gap-y-12  w-full text-lg items-center text-center'>
+        <Link to="/about" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">About</Link>
+        <Link to="/projects" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Projects</Link>
+        <Link to="/blog" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Blog</Link>
+
+        <Link to="mailto:donovyian@gmail.com" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500">Contact</Link>
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+</div>
+
+      </div>
   <div className="hidden md:flex w-full justify-center ">
 
     <div className='hidden  lg:flex   w-full '>
@@ -64,7 +116,7 @@ const Home = () => {
     FRONT-END WEB DEVELOPER<span className='text-5xl text-lightText dark:text-amber-100'>.</span>
   </h2>
   <p className='dark:text-fblack text-sm'>
-    Want to take a little tour of the amazing works I've completed over the years? Explore my <span className='text-amber-100'><Link to="/projects">Portfolio!</Link></span>
+    Want to take a little tour of the amazing works I've completed over the years? Explore my <span className='text-amber-100 dark:text-yellow-500'><Link to="/projects">Portfolio!</Link></span>
   </p>
 
   <div className='flex text-yellow-500 space-x-2 text-md'>
@@ -93,59 +145,7 @@ const Home = () => {
           </div>
   </div>
 <div className=''>
-      <div className=' lg:hidden'>
-      <div className="flex md:hidden py-[22px] justify-center w-full">
-      <SpinningLogo />
 
-        </div>  
-  <div className="lg:hidden absolute overflow-hidden right-[18%] bottom-20 md:top-36 w-full ">
-
-  <RotatingBrain />
-  </div>
-
-{/* name & intro mobile */}
-<div className=''>
-  <div className='absolute top-96 left-1/2 md:top-80'>
-
-    <SpinningCircle  /> 
-  </div>
-  <div className='absolute m-auto -bottom-[400px] md:-bottom-[320px] '>
-<div className='lg:hidden md:text-md text-dwhite dark:text-amber-100 m-auto   flex text-center justify-center flex-col md:mt-28'>
-              <p>Hey there! i'm</p>
-              <h1 className='text-3xl md:text-4xl font-bold text-amber-100'> IAN </h1>
-              <h1 className='text-3xl md:text-4xl font-bold text-amber-100 pb-2'> QUADRI<span className='text-3xl md:text-5xl text-yellow-500'>.</span></h1>
-              {/* <p className='text-lightText dark:text-amber-100'>your friendly WEB<span> DEVELOPER </span></p> */}
-
-
-            </div>
-
-            <div className='text-sm md:text-[18px] px-4 lg:hidden  flex text-center justify-center flex-col text-dwhite dark:text-amber-100'>
-              {/* <p>INTRODUCTION</p> */}
-              <h2 className='text-dwhite dark:text-yellow-500 text-1xl md:text-1xl font-bold'>FRONT-END WEB DEVELOPER</h2>
-              <p className=' w-1/2 md:w-1/3 m-auto'>Want to take a little tour of the amazing works i've completed over the years? Explore my Portfolio!</p>
-            </div>
-
-  </div>
-
-        <div>
-        <div className='md:hidden absolute top-[700px] w-full -left-0 text-lightText dark:text-amber-100'>
-          <div className='grid grid-cols-2 gap-x-36 gap-y-12  w-full text-lg items-center text-center'>
-        <Link to="/about" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">About</Link>
-        <Link to="/projects" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Projects</Link>
-        <Link to="/blog" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Blog</Link>
-
-        <Link to="mailto:donovyian@gmail.com" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500">Contact</Link>
-
-
-
-          </div>
-
-        </div>
-      </div>
-
-</div>
-
-      </div>
 </div>
 
           </motion.div>
