@@ -47,18 +47,18 @@ const Home = () => {
       <SpinningLogo />
 
         </div>  
-  <div className="lg:hidden absolute overflow-hidden right-[12%] -bottom-48 md:top-36 w-full ">
+  <div className="lg:hidden absolute overflow-hidden right-[18%] md:right-[15%] -bottom-36 md:top-36 w-full ">
 
   <RotatingBrain />
   </div>
 
 {/* name & intro mobile */}
 <div className=''>
-  <div className='absolute top-96 left-1/2 md:top-80'>
+  <div className='absolute top-1/2 inset-1/2 md:top-[40%]'>
 
     <SpinningCircle  /> 
   </div>
-  <div className='absolute m-auto top-1/3 mt-10 md:-bottom-[320px] '>
+  <div className='absolute m-auto top-[25%] mt-10 md:-top-12'>
 <div className='lg:hidden md:text-md text-dwhite dark:text-amber-100 m-auto   flex text-center justify-center flex-col md:mt-28'>
               <p>Hey there! i'm</p>
               <h1 className='text-3xl md:text-4xl font-bold text-amber-100'> IAN </h1>
@@ -77,7 +77,7 @@ const Home = () => {
   </div>
 
         <div>
-        <div className='md:hidden absolute bottom-0 w-full -left-0 text-lightText dark:text-amber-100'>
+        <div className='md:hidden absolute w-full bottom-0 -left-2 text-lightText dark:text-amber-100'>
           <div className='grid grid-cols-2 gap-x-36 gap-y-12  w-full text-lg items-center text-center'>
         <Link to="/about" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">About</Link>
         <Link to="/projects" className="hover:text-yellow-500 underline decoration-fblack active:text-fblack active:decoration-yellow-500 ">Projects</Link>

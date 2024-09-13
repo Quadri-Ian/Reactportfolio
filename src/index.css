@@ -108,3 +108,9 @@ body::-webkit-scrollbar {
   min-height: calc(100vh - 145px);
   
 }
+
+@media only screen and (max-width: 768px) {
+  .min-h-minus {
+    min-height: calc(100vh - 40px);
+  }
+}
