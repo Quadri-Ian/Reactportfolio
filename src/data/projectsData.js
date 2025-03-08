@@ -8,7 +8,7 @@ import Verschona from "../Images/Verschona Nail Boutique.png";
 import Bomb from "../Images/BombshelterEnt.png";
 import Dscent from "../Images/dscent.png";
 import Flip from "../Images/Flip.png";
-import Tammy from "..//Images/Tammy-Micheals";
+import Tammy from "..//Images/Tammy-Micheals.png";
 
 const projectsData = [
   {
