@@ -65,7 +65,7 @@ const App = () => {
         <AnimatedRoutes />
 
         {/* Footer positioned at the bottom */}
-        <div className="mt-auto w-full">
+        <div className="mt-8 w-full">
           <Footer />
         </div>
       </div>
