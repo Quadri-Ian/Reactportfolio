@@ -46,7 +46,7 @@ const RotatingBrain = () => {
         <ambientLight  />
         <directionalLight position={[10, 10, 5]} intensity={1} />
 
-        <Suspense fallback={null}>
+        <Suspense fallback={<div>Loading model...</div>}>
           <BrainModel />
         </Suspense>
 

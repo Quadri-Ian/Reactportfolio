@@ -9,6 +9,8 @@ import Bomb from "../Images/BombshelterEnt.png";
 import Dscent from "../Images/dscent.png";
 import Flip from "../Images/Flip.png";
 import Tammy from "..//Images/Tammy-Micheals.png";
+import Cdim from "..//Images/cdim-hero.png";
+import Rumisltt from "..//Images/rumisaltt-hero.png"
 
 const projectsData = [
   {
@@ -27,13 +29,27 @@ const projectsData = [
 
     {
       id: 3,
+      name: "Rumis Altt",
+      link: "https://rumisaltt.com/",
+      image: Rumisltt,
+    },
+    
+    {
+      id: 4,
+      name: "CDIM",
+      link: "https://cdim.info/",
+      image: Cdim,
+    },
+
+    {
+      id: 5,
       name: "Tami Micheal",
       link: "https://tamimichael.com",
       image: Tammy,
     },
 
     {
-      id: 4,
+      id: 6,
       name: "Prive",
       link: "https://www.prive.liing.com",
       image: Prive,
@@ -41,42 +57,42 @@ const projectsData = [
 
   
     {
-      id: 5,
+      id: 7,
       name: "Moade VALUE FARM",
       link: "https://moadevaluefarm.com",
       image: Moade,
     },
 
     {
-        id: 6,
+        id: 8,
         name: "madame dubois",
         link: "https://madamedubois.com",
         image: Madame,
       },
 
       {
-        id: 7,
+        id: 9,
         name: "verschona Nail boutique",
         link: "https://verschona.com",
         image: Verschona,
       },
 
       {
-        id: 8,
+        id: 10,
         name: "bomb shelter ent",
         link: "https://bombshelterent.com",
         image: Bomb,
       },
 
       {
-        id: 9,
+        id: 11,
         name: "dscentstation",
         link: "https://dscentsation.ng/",
         image: Dscent,
       }, 
 
       {
-        id: 10,
+        id: 12,
         name: "ounje re (project)",
         link: "https://serene-sprite-38a4f8.netlify.app/",
         image: Ounje,
